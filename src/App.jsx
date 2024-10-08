@@ -1,14 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import AppName from "./components/AppName";
+import AddToDo from "./components/AddToDo";
+import "./App.css";
+import ToDoItems from "./components/ToDoItems";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return <div>
-    Placeholder
-  </div>
+  const todoList = [
+    {
+      todo: "Buy Milk",
+      date: "8/10/24",
+    },
+    {
+      todo: "Go to college",
+      date: "8/10/24",
+    },
+  ];
+  return (
+    <center id="todo-container">
+      <AppName />
+      <AddToDo />
+      <ToDoItems toDoItems={todoList} />
+    </center>
+  );
 }
 
-export default App
+export default App;
