@@ -1,13 +1,12 @@
 import ToDoItem from "./ToDoItem";
+import styles from "./ToDoItems.module.css";
 
 const ToDoItems = ({ toDoItems }) => {
-  console.log(toDoItems);
   return (
-    <div className="item-container">
+    <div className={styles.itemcontainer}>
       {toDoItems.map((item) => (
         <ToDoItem date={item.date} todo={item.todo} />
       ))}
-      ;
     </div>
   );
 };
