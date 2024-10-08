@@ -1,6 +1,6 @@
 function AddToDo() {
   return (
-    <div className="container text-center">
+    <>
       <div className="kg-row row">
         <div className="col-6">
           <input type="text" placeholder="Enter ToDo Here" />
@@ -14,7 +14,7 @@ function AddToDo() {
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

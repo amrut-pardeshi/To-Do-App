@@ -1,7 +1,7 @@
 function ToDoItem({ todo, date }) {
   return (
-    <div className="container">
-      <div className="row kg-row">
+    <>
+      <div className="kg-row row">
         <div className="col-6">{todo}</div>
         <div className="col-4">{date}</div>
         <div className="col-2">
@@ -10,7 +10,7 @@ function ToDoItem({ todo, date }) {
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -15,7 +15,7 @@ function App() {
     },
   ];
   return (
-    <center id="todo-container">
+    <center id="todo-container" className="container text-center">
       <AppName />
       <AddToDo />
       <ToDoItems toDoItems={todoList} />
